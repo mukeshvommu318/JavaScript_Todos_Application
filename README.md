@@ -25,5 +25,23 @@
  #### setAttribute() 
  	-> It allows to add attribute to the HTML element. if the attribute exists it will replace to that attribute
   	labelElement.setAttribute("for","checkboxid")
+   
+#####   1) Listing the all items in the List using for_of loop
+ 	A) let todosList = [
+	    {text:"Learn HTMNL",uniqueNo:1},
+     	    {text:"Learn CSS",uniqueNo:2},
+	    {text:"Learn JavaScript",uniqueNo:3}]
+     	   function createAndAppendTodo(todo){Dynamic JScode}
+	   for (let each_item of todosList){
+		createAndAppendTodo(each_item)
+	   }
  	
 ### Agenda : InputElement (placeholder) -> Dom Manipulations(removeChild(), classList.toggle() ) -> Js Built-in function ( alert() )
+
+#####   1) Fixing the Check box (When the user Clicks the particular Checkbox/list it must be click)
+ 	A) Add the UniqueId to the object in ther list & pass that uniqueId to InputElement and LabelElement
+  			let checkboxId = "checkbox"+todo.uniqueNo
+     			inputElement.id=checkboxId
+			labelElement.setAttribute("for",checkboxId)
+   
+	
