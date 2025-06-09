@@ -43,5 +43,12 @@
   			let checkboxId = "checkbox"+todo.uniqueNo
      			inputElement.id=checkboxId
 			labelElement.setAttribute("for",checkboxId)
-   
+
+#####   2) How to Strick of the text when we are clicking the textBox
+	Step-1)  Add required CSS to Strick the text
+ 		 (text-decoration: line-through;)
+ 	Srep-2)  Speciific uniqueId to each Label Element
+  	Step-3)  Add Event-Listener to Check Boxes
+   	Step-4)  Check the Styles of the Label Element based on CheckBox Check
+    	
 	
