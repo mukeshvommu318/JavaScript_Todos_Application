@@ -48,7 +48,25 @@
 	Step-1)  Add required CSS to Strick the text
  		 (text-decoration: line-through;)
  	Srep-2)  Speciific uniqueId to each Label Element
+  			let labelId = "label"+todo.uniqueNo
+     			labelElement.id=labelId
   	Step-3)  Add Event-Listener to Check Boxes
+   			inputElement.onclick = function(){
+        			onToDoStatusChanged(checkboxId,labelId)
+    			}
    	Step-4)  Check the Styles of the Label Element based on CheckBox Check
+    			function onToDoStatusChanged(checkboxId,labelId){
+			    let checkboxElement = document.getElementById(checkboxId)
+			    let labelElement = document.getElementById(labelId)
+			
+			    //  if(checkboxElement.checked === true){
+			    //     labelElement.classList.add("checked")
+			    //  }
+			    //  else{
+			    //     labelElement.classList.remove("checked")
+			    //  }
+			
+			    labelElement.classList.toggle('checked')
+			}
     	
 	
