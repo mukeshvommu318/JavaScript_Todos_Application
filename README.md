@@ -69,4 +69,13 @@
 			    labelElement.classList.toggle('checked')
 			}
     	
-	
+
+ 	#### classList.toggle() 
+	-> Adds a class if it's not present and removes it if it is present
+ 		element.classList.toggle("className");
+
+##### 3) Delete the Todo item
+	Step-1) Specify Id to each Todo Item
+ 	Step-2) Add Event listener to Delete Icon
+  	Step-3) Delete Todo Item from the Todos Items Container
+   
