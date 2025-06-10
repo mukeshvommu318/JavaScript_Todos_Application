@@ -90,3 +90,32 @@
 
 	#####  removeChild() : It removes the Child Element from the Parent Element
  			todoItemsContainer.removeChild(todoElement)   
+
+##### 4) Add new Todo item on UserInput
+	Step-1) Add EventListenier to the Button
+ 			let addToDoButton = document.getElementById('addTodoButton');
+			addToDoButton.onclick = function(){
+			    onAddTodo()
+			}
+ 	Step-2) Access User Input Value
+  			function onAddTodo(){
+			    let userInputElement = document.getElementById("todoUserInput");
+			    let userInputValue = userInputElement.value
+			    if(userInputValue === ""){
+			        alert("Enter valid Index");
+			        return;
+			    }
+			    todoCount = todoCount + 1;
+			    let newTodo ={
+			        text : userInputValue,
+			        uniqueNo : todoCount
+			    }
+			
+			    createAndAppendTodo(newTodo);
+			}
+  	Step-3) Create New Todo Item
+   			let newTodo ={
+			        text : userInputValue,
+			        uniqueNo : todoCount
+			    }
+			
