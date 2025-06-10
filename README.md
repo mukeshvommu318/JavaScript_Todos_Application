@@ -76,6 +76,17 @@
 
 ##### 3) Delete the Todo item
 	Step-1) Specify Id to each Todo Item
+ 			let todoId = "todo" + todo.uniqueNo
+    			todoElement.id=todoId
  	Step-2) Add Event listener to Delete Icon
+  			deleteIcon.onclick=function(){
+            			onDeleteToDo(todoId)
+    			}
   	Step-3) Delete Todo Item from the Todos Items Container
-   
+			function onDeleteToDo(todoId){
+			    let todoElement = document.getElementById(todoId)
+			    todoItemsContainer.removeChild(todoElement)
+			}
+
+	#####  removeChild() : It removes the Child Element from the Parent Element
+ 			todoItemsContainer.removeChild(todoElement)   
