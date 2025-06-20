@@ -122,3 +122,19 @@
 ### Todos App Part-3 
 ### Agenda : Local Storage(getItem(),setItem()) -> Values(null) -> HTML Elements(textarea Element)
 
+### Todos App Part-4
+### Agenda : JSON(JSON.stringify(), JSON.parse()) 
+##### Store the Todo List in Local Storage
+	-> Add Save Button To the Todo App when we click on the Save Button, Todo List will Save in to Local Storage
+ 		<button class="button" id="saveTodoButton">Save</button>
+   	-> Add Eventlistener to the save Button
+    		let saveTodoButton = document.getElementById("saveTodoButton")
+		saveTodoButton.onclick=function(){localStorage.setItem("todoList",JSON.stringify(todosList))}
+  	-> Add the Function This FUnction Will convert the TodoList(String) to Object
+   		function getTodoListFromLocalStorage(){
+		    let StringifyTodoList = localStorage.getItem("todoList")
+		    let parseTodoList = JSON.parse(StringifyTodoList)
+		}
+  	-> Delete the Todo List Because We have create the TodosList Locally(LocalStorage)
+   	-> Add The New TodoItem to TodoList (Local Storage)
+    		todosList.push(newTodo)
