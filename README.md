@@ -141,4 +141,23 @@
 
 ### Todos App Part-5
 ### Agenda : Delete the TodoItem(after Reload)
-	-> 
+	-> We wnat to update the TodoList After thr Clicking the Delete Button
+ 			let deleteTodoItemIndex = todosList.findIndex(function(eachTodo){
+			            let eachTodoId = "todo"+eachTodo.uniqueNo
+			            
+			            if(eachTodoId===todoId){
+			                return true;
+			            }
+			            else{
+			                return false;
+			            }
+			    })
+    			todosList.splice(deleteTodoItemIndex,1)
+       
+ 	
+   			
+
+
+
+
+
