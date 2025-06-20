@@ -138,3 +138,7 @@
   	-> Delete the Todo List Because We have create the TodosList Locally(LocalStorage)
    	-> Add The New TodoItem to TodoList (Local Storage)
     		todosList.push(newTodo)
+
+### Todos App Part-5
+### Agenda : Delete the TodoItem(after Reload)
+	-> 
